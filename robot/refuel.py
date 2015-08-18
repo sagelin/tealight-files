@@ -16,16 +16,13 @@ while score < 32:
       move()
     if look () == 'fruit':
       move()
-      break
     else:
       turn(1)
-      break
   if look() =='fruit':
     while touch() == 'none':
       move()
     if look () == 'fruit':
       move()
-      break
     else:
       turn(2)
 if look() =='fruit':
@@ -33,7 +30,6 @@ if look() =='fruit':
       move()
     if look () == 'fruit':
       move()
-      break
     else:
       turn(3)
 if look() =='fruit':
@@ -41,6 +37,5 @@ if look() =='fruit':
       move()
     if look () == 'fruit':
       move()
-      break
     else:
       turn(4)
