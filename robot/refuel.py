@@ -17,9 +17,9 @@ while score < 32:
        move()
        score += 1
        break
-    else:
+    elif:
+      look() == "wall"
       turn(1)
-      move()
   """if look() =='fruit':
     while touch() == 'none':
       move()
