@@ -14,4 +14,4 @@ def fractal(scale, detail):
     detail =-1
    
 
-fractal(100,1)
+fractal(100,2)
