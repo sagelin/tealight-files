@@ -19,6 +19,7 @@ while score < 32:
        break
     else:
       turn(1)
+      move()
   """if look() =='fruit':
     while touch() == 'none':
       move()
