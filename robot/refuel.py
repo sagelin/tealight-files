@@ -5,7 +5,9 @@ from tealight.robot import (move,
                             smell, 
                             left_side, 
                        right_side)
-
+score = 0
+if thing == fruit:
+  score += 1
 from tealight.robot import *
 while score < 32:
   
