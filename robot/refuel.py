@@ -5,7 +5,6 @@ from tealight.robot import (move,
                             smell, 
                             left_side, 
                        right_side)
-from tealight.robot import *
 score = 0
 turncounter = 0
 while 1 == 1:
