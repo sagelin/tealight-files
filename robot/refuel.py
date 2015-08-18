@@ -6,7 +6,7 @@ from tealight.robot import (move,
                             left_side, 
                        right_side)
 from tealight.robot import *
-move(1)
+move()
 """score = 0
 if touch() == 'fruit':
   score += 1
