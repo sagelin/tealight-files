@@ -7,7 +7,8 @@ def fractal(scale, detail):
   if scale > 0:
     turn(60)
     move(scale/2)
-  if scale > 0:
+    turn(-300)
+    move(scale/2)
     turn(-60)
     move(scale/2)
    
