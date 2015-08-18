@@ -39,4 +39,4 @@ while score < 32:
       move()
     else:
       turn(4)
-move()
+move(1)
