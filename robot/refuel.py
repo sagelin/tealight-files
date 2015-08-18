@@ -15,6 +15,8 @@ while True:
     turncounter += 1
   if turncounter == 4:
     turncounter = 0
+    while touch() == 'wall':
+      turn(1)
     move()
   if look() =='fruit':
     turncounter = 0
