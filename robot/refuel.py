@@ -7,7 +7,7 @@ from tealight.robot import (move,
                        right_side)
 score = 0
 turncounter = 0
-while True:
+while score < 32:
   print "breaking"
   if look() =='wall':
     print "wall"
@@ -16,11 +16,11 @@ while True:
   if turncounter == 4:
     turncounter = 0
     move()
-  """if look() =='fruit':
+  if look() =='fruit':
     turncounter = 0
     while look() =="fruit":
       if touch() == 'None':
         move()
       if touch() == 'fruit':
        move()
-       score += 1"""
+       score += 1
