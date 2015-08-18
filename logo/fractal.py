@@ -13,7 +13,8 @@ def segment(scale, detail):
       segment(scale/2, detail -1)
     move(scale)
     turn(120)
-    fractal(scale, detail)
+    if detail > 0:
+      segment(scale/2, detail -1)
     
 def fractal(scale, detail)
   if detail > 0:
