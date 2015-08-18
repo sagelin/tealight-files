@@ -20,6 +20,7 @@ while score < 32:
        score += 1
        break
   if look() =='wall':
+    print "wall"
     turn(1)
     turncounter += 1
   if turncounter == 4:
