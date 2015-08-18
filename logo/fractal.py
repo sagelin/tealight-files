@@ -9,7 +9,7 @@ def fractal(scale, detail):
     move(scale/2)
     turn(120)
     move(scale/2)
-    turn(-60)
+    turn(300)
     move(scale/2)
    
 
