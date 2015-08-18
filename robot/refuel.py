@@ -22,7 +22,7 @@ while score < 32:
   if look() =='wall':
     turn(1)
     turncounter += 1
- if turncounter == 4:
+  if turncounter == 4:
       turncounter = 0
       move()
 
