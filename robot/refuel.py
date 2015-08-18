@@ -18,7 +18,6 @@ while score < 32:
       if touch() == 'fruit':
        move()
        score += 1 
-
   if look() =='wall':
     print "wall"
     turn(1)
