@@ -7,4 +7,12 @@ from tealight.robot import (move,
                             right_side)
 
 from tealight.robot import *
-move()
+if look() =='fruit':
+  while touch() == 'none':
+    move()
+  if look () == 'fruit':
+    move()
+    break
+   else: 
+      turn(2)
+turn(3)
