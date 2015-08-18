@@ -40,4 +40,4 @@ while score < 32:
       move()
       score += 1
     else:
-      turn(4)"""
+      turn(4)
