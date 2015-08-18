@@ -7,11 +7,13 @@ from tealight.robot import (move,
                        right_side)
 
 from tealight.robot import *
-if look() =='fruit':
-  while touch() == 'none':
-    move()
-  if look () == 'fruit':
-    move()
-    break
-  else:
-    turn(1)
+while score < 32:
+  
+  if look() =='fruit':
+    while touch() == 'none':
+      move()
+    if look () == 'fruit':
+      move()
+      break
+    else:
+      turn(1)
