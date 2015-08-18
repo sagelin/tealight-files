@@ -19,5 +19,5 @@ def segment(scale, detail):
   
     
     
-turn()
+turn(0)
 segment(300,4)
