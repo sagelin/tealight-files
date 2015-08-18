@@ -7,6 +7,7 @@ def fractal(scale, detail):
   for i in range(0, int(detail)):
     turn(60)
     move(scale/2)
+    detail =- 1
     
    
 
