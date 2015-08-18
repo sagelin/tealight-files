@@ -14,4 +14,4 @@ def fractal(scale, detail):
     
    
 
-fractal(100,1)
+fractal(100,3)
