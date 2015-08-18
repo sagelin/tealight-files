@@ -7,8 +7,6 @@ def segment(scale, detail):
     turn(120)
     if detail > 0:
       segment(scale/2, detail -1)
-      if detail > 0:
-        segment(scale/2, detail -1)
     move(scale)
     turn(120)
     if detail > 0:
@@ -21,4 +19,4 @@ def segment(scale, detail):
     
       
 turn(90)
-segment(100,1)
+segment(300,3)
