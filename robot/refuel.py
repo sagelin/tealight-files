@@ -17,11 +17,11 @@ while score < 32:
   if turncounter == 4:
     turncounter = 0
     move()
-  """if look() =='fruit':
+  if look() =='fruit':
     turncounter = 0
     while look() =="fruit":
       if touch() == 'None':
         move()
       if touch() == 'fruit':
        move()
-       score += 1"""
+       score += 1
