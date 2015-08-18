@@ -24,6 +24,6 @@ while score < 32:
     turn(1)
     turncounter += 1
   if turncounter == 4:
-    "counter"
+    print "counter"
       turncounter = 0
       move()
