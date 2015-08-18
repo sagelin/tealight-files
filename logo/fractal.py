@@ -4,7 +4,7 @@ from tealight.logo import move, turn
 
 def fractal(scale, detail):
   move(scale)
-  if detail > 0:
+  while detail > 0:
     turn(60)
     move(scale/2)
     turn(180)
@@ -13,4 +13,4 @@ def fractal(scale, detail):
     move(scale/2)
    
 
-fractal(100,2)
+fractal(100,1)
