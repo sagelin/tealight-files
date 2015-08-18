@@ -24,4 +24,4 @@ while True:
     if touch() == 'fruit':
      move()
      score += 1
-     break
+    break
