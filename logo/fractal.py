@@ -4,3 +4,5 @@ from tealight.logo import move, turn
 
 def fractal(scale, detail):
   move(scale)
+
+fractal(100,1)
