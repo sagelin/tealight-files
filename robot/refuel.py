@@ -21,3 +21,4 @@ while True:
   while look() =="fruit":
     move()
     break
+  move()
