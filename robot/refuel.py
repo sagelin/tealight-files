@@ -13,4 +13,4 @@ if look() =='fruit':
   if look () == 'fruit':
     move()
     break"""
-turn(3)
+turn(1)
