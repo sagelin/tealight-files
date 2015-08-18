@@ -16,10 +16,8 @@ def segment(scale, detail):
     if detail > 0:
       segment(scale/2, detail -1)
 
-def tree(scale, detail):
   
     
     
-      
 turn(90)
 segment(300,4)
