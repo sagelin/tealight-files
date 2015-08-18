@@ -6,4 +6,5 @@ from tealight.robot import (move,
                             left_side, 
                             right_side)
 
-from tealight.roboty import* 
+from tealight.roboty import *
+
