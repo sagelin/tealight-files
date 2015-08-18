@@ -18,12 +18,10 @@ while score < 32:
       if touch() == 'fruit':
        move()
        score += 1
-       break
   if look() =='wall':
     print "wall"
     turn(1)
     turncounter += 1
   if turncounter == 4:
-    print "counter"
     turncounter = 0
     move()
