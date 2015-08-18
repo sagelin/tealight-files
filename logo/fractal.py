@@ -14,4 +14,3 @@ def segment(scale, detail):
       
 
 segment(100,1)
-move(-300)
