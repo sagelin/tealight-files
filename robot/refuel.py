@@ -7,4 +7,4 @@ from tealight.robot import (move,
                             right_side)
 
 from tealight.robot import *
-move(1)
+move()
