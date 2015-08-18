@@ -13,7 +13,7 @@ while score < 32:
     while look() =="fruit":
       if touch() == 'None':
         move()
-     if touch() == 'fruit':
+      if touch() == 'fruit':
        move()
        score += 1
        break
