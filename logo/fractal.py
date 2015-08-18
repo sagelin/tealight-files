@@ -13,10 +13,11 @@ def segment(scale, detail):
       segment(scale/2, detail -1)
     move(scale)
     turn(120)
-    if detail > 0:
-      segment(scale/2, detail -1)
+    fractal(scale, detail)
     
-
+def fractal(scale, detail)
+  if detail > 0:
+    segment(scale/2, detail -1)
       
 turn(90)
 segment(100,1)
