@@ -4,11 +4,11 @@ from tealight.logo import move, turn
 
 def segment(scale, detail):
     move(scale)
-    turn(60)
+    turn(120)
     move(scale)
-    turn(60)
+    turn(120)
     move(scale)
-    turn(60)
+    turn(120)
 
 
       
