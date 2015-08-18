@@ -13,6 +13,4 @@ if look() =='fruit':
   if look () == 'fruit':
     move()
     break
-   else: 
-      turn(2)
 turn(3)
