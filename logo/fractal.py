@@ -11,6 +11,7 @@ def fractal(scale, detail):
     move(scale/2)
     turn(60)
     move(scale/2)
+    detail =-1
    
 
 fractal(100,1)
