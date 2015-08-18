@@ -9,7 +9,6 @@ from tealight.robot import *
 score = 0
 if touch() == 'fruit':
   score += 1
-from tealight.robot import *
 while score < 32:
   
   if look() =='fruit':
