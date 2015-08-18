@@ -9,7 +9,7 @@ from tealight.robot import *
 score = 0
 while score < 32:
   
-  if look() =='fruit':
+  if look() =='None':
     while touch() == 'none':
       move()
     if touch() == 'fruit':
