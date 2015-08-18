@@ -9,4 +9,4 @@ def fractal(scale, detail):
     move(scale/2)
    
 
-fractal(100,2)
+fractal(200,2)
