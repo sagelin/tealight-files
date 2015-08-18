@@ -16,9 +16,7 @@ def segment(scale, detail):
     if detail > 0:
       segment(scale/2, detail -1)
     
-def fractal(scale, detail)
-  if detail > 0:
-    segment(scale/2, detail -1)
+    
       
 turn(90)
 segment(100,1)
