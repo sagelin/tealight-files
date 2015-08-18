@@ -1,14 +1,18 @@
 from tealight.logo import move, turn
 
 # Draws the von Koch Snowflake curve
-angle = 60
+
 def fractal(scale, detail):
   move(scale)
   for i in range(0, int(detail)):
-    turn(angle)
+    turn(60)
     move(scale/2)
-    detail =- 1
-   
+    turn(180)
+    move(scale/2)
+    turn(120)
+    move(scale/2)
+    
     
    
+
 fractal(100,3)
