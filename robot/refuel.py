@@ -17,7 +17,7 @@ while score < 32:
       score += 1
     else:
       turn(1)
-  if look() =='fruit':
+  """if look() =='fruit':
     while touch() == 'none':
       move()
     if touch() == 'fruit':
@@ -40,4 +40,4 @@ while score < 32:
       move()
       score += 1
     else:
-      turn(4)
+      turn(4)"""
