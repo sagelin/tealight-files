@@ -19,9 +19,5 @@ while True:
   if look() =='fruit':
     turncounter = 0
   while look() =="fruit":
-    if touch() == 'None':
-      move()
-    if touch() == 'fruit':
-     move()
-     score += 1
+    move()
     break
