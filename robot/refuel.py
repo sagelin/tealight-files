@@ -8,8 +8,10 @@ from tealight.robot import (move,
 from tealight.robot import *
 score = 0
 while score < 32:
+  if look()=="wall":
+    move()
   
-  if look() =='None':
+"""  if look() =='None':
     while touch() == 'none':
       move()
     if touch() == 'fruit':
@@ -17,7 +19,7 @@ while score < 32:
       score += 1
     else:
       turn(1)
-  """if look() =='fruit':
+  if look() =='fruit':
     while touch() == 'none':
       move()
     if touch() == 'fruit':
