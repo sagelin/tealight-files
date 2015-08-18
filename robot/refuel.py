@@ -24,4 +24,4 @@ while score < 32:
         move()
       if touch() == 'fruit':
        move()
-       score += 1"""
+       score += 1
