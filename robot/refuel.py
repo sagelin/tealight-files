@@ -7,7 +7,7 @@ from tealight.robot import (move,
                        right_side)
 score = 0
 turncounter = 0
-while true:
+while True:
   print "breaking"
   if look() =='wall':
     print "wall"
