@@ -4,9 +4,9 @@ from tealight.robot import (move,
                             touch, 
                             smell, 
                             left_side, 
-""""                        right_side)
+                       right_side)
 
-from tealight.robot import *
+"""m tealight.robot import *
 if look() =='fruit':
   while touch() == 'none':
     move()
