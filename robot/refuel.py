@@ -6,7 +6,8 @@ from tealight.robot import (move,
                             left_side, 
                        right_side)
 from tealight.robot import *
-score = 0
+move(1)
+"""score = 0
 if touch() == 'fruit':
   score += 1
 while score < 32:
@@ -38,5 +39,4 @@ while score < 32:
     if touch() == 'fruit':
       move()
     else:
-      turn(4)
-move(1)
+      turn(4)"""
