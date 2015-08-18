@@ -9,6 +9,7 @@ from tealight.robot import *
 score = 0
 turncounter = 0
 while score < 32:
+  print "breaking"
   
 
   if look() =='wall':
