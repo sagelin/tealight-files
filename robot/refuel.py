@@ -4,7 +4,7 @@ from tealight.robot import (move,
                             touch, 
                             smell, 
                             left_side, 
-                            right_side)
+""""                        right_side)
 
 from tealight.robot import *
 if look() =='fruit':
@@ -12,5 +12,5 @@ if look() =='fruit':
     move()
   if look () == 'fruit':
     move()
-    break
+    break"""
 turn(3)
