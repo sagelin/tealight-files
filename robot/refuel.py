@@ -6,10 +6,7 @@ from tealight.robot import (move,
                             left_side, 
                        right_side)
 from tealight.robot import *
-move()
-"""score = 0
-if touch() == 'fruit':
-  score += 1
+score = 0
 while score < 32:
   
   if look() =='fruit':
@@ -17,6 +14,7 @@ while score < 32:
       move()
     if touch() == 'fruit':
       move()
+      score += 1
     else:
       turn(1)
   if look() =='fruit':
@@ -24,6 +22,7 @@ while score < 32:
       move()
     if touch() == 'fruit':
       move()
+      score += 1
     else:
       turn(2)
   if look() =='fruit':
@@ -31,6 +30,7 @@ while score < 32:
       move()
     if touch() == 'fruit':
       move()
+      score += 1
     else:
       turn(3)
   if look() =='fruit':
@@ -38,5 +38,6 @@ while score < 32:
       move()
     if touch() == 'fruit':
       move()
+      score += 1
     else:
-      turn(4)"""
+      turn(4)
