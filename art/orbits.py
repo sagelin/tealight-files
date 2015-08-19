@@ -13,6 +13,7 @@ gravityx = screen_width/2
 gravityy = screen_height/2
 
 power = 0.3
+gravity_power = 0.1
 
 while True:
   
@@ -28,6 +29,7 @@ def handle_keydown(key):
   elif key == "up":
     ay = -power
   elif key == "down":
+    print x
     ay = power
 
 def handle_keyup(key):
