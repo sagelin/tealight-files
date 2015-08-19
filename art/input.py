@@ -7,6 +7,6 @@ xpos = 0
 ypos = 0
 
 def handle_mousedown(x,y):
-  global lastx, last
-  
-  
+  global lastx, lasty
+  lastx = x
+  lasty = y
