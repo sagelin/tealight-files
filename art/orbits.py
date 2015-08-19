@@ -21,7 +21,6 @@ while True:
 def handle_keydown(key):
   global ax, ay
   
-
   if key == "left":
     ax = -power
   elif key == "right":
