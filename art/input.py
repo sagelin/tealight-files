@@ -18,5 +18,7 @@ def handle_mousedown(x,y):
   def handle_mousemove(x, y, button):
     global xpos, ypos
     
-    if button == "left"
+    if button == "left":
+      line(xpos, ypos, x, y)
+      
     
