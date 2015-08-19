@@ -8,7 +8,7 @@ ypos = 0
 
 c="blue"
 
-color(c)
+color("blue")
 
 def handle_mousedown(x,y):
   global xpos, ypos
