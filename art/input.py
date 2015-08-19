@@ -6,7 +6,9 @@ connect(drawingpad)
 xpos = 0
 ypos = 0
 
-color()
+
+
+color(selected color)
 
 def handle_mousedown(x,y):
   global lastx, lasty
