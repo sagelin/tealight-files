@@ -8,7 +8,7 @@ ypos = 0
 
 
 
-color(selected color)
+color(c)
 
 def handle_mousedown(x,y):
   global xpos, ypos
