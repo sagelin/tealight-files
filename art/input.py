@@ -11,6 +11,9 @@ ypos = 0
 color(selected color)
 
 def handle_mousedown(x,y):
-  global lastx, lasty
+  global xpos, ypos
   lastx = x
   lasty = y
+
+  def handle_mousemove(x, y, button):
+    global xpos, ypos
