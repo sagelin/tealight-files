@@ -20,6 +20,6 @@ def handle_mousedown(x,y):
     
     if button == "left":
       line(xpos, ypos, x, y)
-      send()
+      send({"xpos":xpos})
       
     
