@@ -6,7 +6,7 @@ connect("drawingpad")
 xpos = 0
 ypos = 0
 
-
+c="blue"
 
 color(c)
 
