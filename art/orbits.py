@@ -9,6 +9,9 @@ vy = 0
 ax = 0
 ay = 0
 
+gravityx = screen_width/2
+gravityy = screen_height/2
+
 power = 0.3
 
 def handle_keydown(key):
@@ -31,6 +34,7 @@ def handle_keyup(key):
     ax = 0
   elif key == "up" or key == "down":
     ay = 0
+
     
 def handle_frame():
   global x,y,vx,vy,ax,ay
@@ -47,5 +51,6 @@ def handle_frame():
   color("blue")
   
   spot(x,y,8)
-  
+
+
   
