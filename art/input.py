@@ -15,14 +15,14 @@ def handle_mousedown(x,y):
   lastx = x
   lasty = y
 
-  def handle_mousemove(x, y, button):
-    global xpos, ypos
+def handle_mousemove(x, y, button):
+   global xpos, ypos
     
-    if button == "left":
-      line(xpos, ypos, x, y)
-      send({"xpos":xpos, "ypos":ypos, "x":x,"y":y})
-      xpos = x
-      ypos = y
+   if button == "left":
+    line(xpos, ypos, x, y)
+    send({"xpos":xpos, "ypos":ypos, "x":x,"y":y})
+    xpos = x
+    ypos = y
 def handle_message(message):
       line(message["xpos"],message["ypos"],message["x"],message["y"])
 
