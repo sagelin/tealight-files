@@ -14,6 +14,9 @@ gravityy = screen_height/2
 
 power = 0.3
 
+while True:
+  
+
 def handle_keydown(key):
   global ax, ay
   
