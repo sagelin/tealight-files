@@ -1,6 +1,6 @@
 from tealight.art import (color, line, spot, circle, box, image, text, background)
 
-"""from tealight.net import*
+from tealight.net import*
 connect("drawingpad")
 
 xpos = 0
@@ -24,9 +24,8 @@ def handle_mousedown(x,y):
       xpos = x
       ypos = y
 def handle_message(message):
-      line(message["xpos"],message["ypos"],message["x"],message["y"])"""
+      line(message["xpos"],message["ypos"],message["x"],message["y"])
 
-color("red")
-def handle_mousedown(x,y):
+
   
   
