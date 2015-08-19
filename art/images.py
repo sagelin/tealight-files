@@ -12,4 +12,6 @@ for i in range(0,width):
       image(x + i * 60, y + j * 60, "misc/YellowFlower.png")
     else:
       image(x + i * 60, y + j * 60, "misc/Clover.png")
-     
+#for i in range(0, height):
+#  for j in range(0, width):
+#    if i
