@@ -28,7 +28,6 @@ def handle_keydown(key):
   elif key == "up":
     ay = -power
   elif key == "down":
-    print x
     ay = power
 
 def handle_keyup(key):
