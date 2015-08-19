@@ -24,5 +24,5 @@ def handle_mousedown(x,y):
       xpos = x
       ypos = y
 def handle_message(message)
-      line(message)
+      line(message["xpos"],message["ypos"],message["x"],message["y"])
     
