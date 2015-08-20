@@ -66,7 +66,7 @@ vx = x
 vy = y
 forwarda = 0 
 decelerate = False
-#def handle_keydown(key):
+def handle_keydown(key):
   global forwarda
   if key == "up":
     forwarda += acceleration
