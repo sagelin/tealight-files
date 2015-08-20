@@ -7,8 +7,8 @@ x = screen_width/2
 y = screen_height/2
 vx = x
 vy = y
-global forwarda = 0 
-global decelerate = False
+forwarda = 0 
+decelerate = False
 def handle_keydown(key):
   if key == "up":
     forwarda += acceleration
