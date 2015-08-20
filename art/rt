@@ -5,4 +5,9 @@ import github.minghsien.art.drawracecar
 acceleration = 0.3
 
 
-def handle_keydown():
+def handle_keydown(key):
+  if key == "left":
+    #
+    
+def handle_frame():
+  
