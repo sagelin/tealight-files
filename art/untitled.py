@@ -61,5 +61,31 @@ def handle_keydown(key):
   #elif moved == False:
   #  drawcar(newcar,"blue")
    
+acceleration = 3
+x = screen_width/2
+y = screen_height/2
+vx = x
+vy = y
+forwarda = 0 
+decelerate = False
+def handle_keydown(key):
+  if key == "up":
+    forwarda += acceleration
+  elif key == "down":
+    forwarda -= acceleration
+def handle_keyup(key):
+  if key == "up":
+    decelerate = True
 
+def handle_frame():
+  global forwarda, decelerate
+  if decelerate == True:
+    forwarda -= 3
+  if forwarda > 60:
+    forwarda = 60
+  color("white")
+  vx = forwarda*cos(theta)
+  vy = forwarda*sin(theta)
+  x += vx 
+  y += yx
 
