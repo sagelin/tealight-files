@@ -1,19 +1,30 @@
 from tealight.net import *
 from tealight.art import *
 from math import *
-from 
 import github.minghsien.art.drawracecar
 acceleration = 3
+vx = x
+vy = y
+forwarda = 0 
 
 def handle_keydown(key):
   if key == "left":
     theta += acceleration
-  if key == "right":
+  elif key == "right":
     theta += -acceleration
-  if key == ""
+  elif key == "up":
+    forwarda += acceleration
+  elif key == "down":
+    forwarda -= acceleration
     
 
 def handle_frame():
   color("white")
+  vx = forwarda*cos(theta)
+  vy = forwarda*sin(theta)
+  
+  
+  
+  
   
   
