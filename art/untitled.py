@@ -52,7 +52,6 @@ decelerate = False
 def handle_keydown(key):
   forwarda = 0
   if key == "up":
-    print("zoom")
     forwarda += acceleration
   elif key == "down":
     forwarda -= acceleration
@@ -84,9 +83,8 @@ def handle_frame():
   if forwarda > 60:
     forwarda = 60
   color("white")
-  vx = forwarda*cos(theta)
-  vy = forwarda*sin(theta)
-  x += vx 
-  y += vy
+  x = forwarda*cos(theta)
+  y = forwarda*sin(theta)
+ 
   
 
