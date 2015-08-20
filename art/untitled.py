@@ -62,13 +62,11 @@ def handle_keydown(key):
   #  drawcar(newcar,"blue")
    
 acceleration = 3
-x = screen_width/2
-y = screen_height/2
 vx = x
 vy = y
 forwarda = 0 
 decelerate = False
-def handle_keydown(key):
+#def handle_keydown(key):
   global forwarda
   if key == "up":
     forwarda += acceleration
