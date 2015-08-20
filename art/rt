@@ -18,7 +18,7 @@ def handle_keyup(key):
   if key == "up":
     decelerate = True
 
-def handle_frame(forwarda,decelerate):
+def handle_frame(forwarda):
   if decelerate == True:
     forwarda -= 3
   if forwarda > 60:
