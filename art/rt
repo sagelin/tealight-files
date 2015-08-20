@@ -2,3 +2,7 @@ from tealight.net import *
 from tealight.art import *
 from math import *
 import github.minghsien.art.drawracecar
+acceleration = 0.3
+
+
+def handle_keydown():
