@@ -21,7 +21,7 @@ def handle_keyup(key):
 def handle_frame():
   if decelerate == True:
     forwarda -= 3
-  if forwarda > 60:
+  if global forwarda > 60:
     forwarda = 60
   color("white")
   vx = forwarda*cos(theta)
