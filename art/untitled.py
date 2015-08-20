@@ -36,23 +36,6 @@ def drawcar(points,colour):
 newcar = rotation(car,0)
 drawcar(newcar,"blue")
 
-def handle_keydown(key):
-  global newcar
-  if key == "left":
-    color("white")
-    box(0,0,screen_width,screen_height)
-      
-    #drawcar(newcar,"white")
-      
-    newcar = rotation(newcar,-10)
-    drawcar(newcar,"blue")
-  elif key == "right":
-    color("white")
-    box(0,0,screen_width,screen_height)
-    #drawcar(newcar,"white")
-      
-    newcar = rotation(newcar,10)
-    drawcar(newcar,"blue")
         
 
   #if moved == True:
@@ -72,6 +55,23 @@ def handle_keydown(key):
     forwarda += acceleration
   elif key == "down":
     forwarda -= acceleration
+  global newcar
+  if key == "left":
+    color("white")
+    box(0,0,screen_width,screen_height)
+      
+    #drawcar(newcar,"white")
+      
+    newcar = rotation(newcar,-10)
+    drawcar(newcar,"blue")
+  elif key == "right":
+    color("white")
+    box(0,0,screen_width,screen_height)
+    #drawcar(newcar,"white")
+      
+    newcar = rotation(newcar,10)
+    drawcar(newcar,"blue")
+
 def handle_keyup(key):
   if key == "up":
     decelerate = True
