@@ -87,5 +87,5 @@ def handle_frame():
   vx = forwarda*cos(theta)
   vy = forwarda*sin(theta)
   x += vx 
-  y += yx
+  y += vy
 
