@@ -83,8 +83,9 @@ def handle_frame():
   if forwarda > 60:
     forwarda = 60
   color("white")
-  x = forwarda*cos(theta)
-  y = forwarda*sin(theta)
- 
+  vx = forwarda*cos(theta)
+  vy = forwarda*sin(theta)
+  x += vx 
+  y += vy
   
 
