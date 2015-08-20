@@ -3,6 +3,7 @@ from tealight.art import *
 from math import *
 import github.minghsien.art.rotation
 acceleration = 3
+
 vx = x
 vy = y
 forwarda = 0 
