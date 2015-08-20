@@ -19,7 +19,7 @@ box(500, 500, 60, 60)
 
 image(200,200,"bird.png")
 
-line(560,0,560,495)
+#line(560,0,560,495)
 
 text(600, 100, "Hello Tealight!")
 
