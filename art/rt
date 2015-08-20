@@ -1,13 +1,17 @@
 from tealight.net import *
 from tealight.art import *
 from math import *
+from 
 import github.minghsien.art.drawracecar
 acceleration = 0.3
 
-
 def handle_keydown(key):
   if key == "left":
-  if key == ""  
+    theta
+  
+  if key == "right":
+
 def handle_frame():
   color("white")
+  
   
