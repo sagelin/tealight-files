@@ -2,4 +2,3 @@ from tealight.net import *
 from tealight.art import *
 import github.minghsien.art.drawracecar
 background("track.png")
-Drawcar(x,y,"blue")
