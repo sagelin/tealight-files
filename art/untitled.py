@@ -52,7 +52,7 @@ decelerate = False
 def handle_keydown(key):
   forwarda = 0
   if key == "up":
-    print("zoom)
+    print("zoom")
     forwarda += acceleration
   elif key == "down":
     forwarda -= acceleration
