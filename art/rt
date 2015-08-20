@@ -3,4 +3,4 @@ from tealight.art import *
 from math import *
 import github.minghsien.art.drawracecar
 
-Drawcar(carcentrex, carcentrey, carcolour)
+drawcar(carcentrex, carcentrey, carcolour)
