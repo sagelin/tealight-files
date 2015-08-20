@@ -11,7 +11,7 @@ car = [(x,y),(x+50,y),(x-40,y-25),(x-40,y+25),(x-40,y-25)
     
 
 def rotation(shape, theta):
-   theta = radians(theta)
+   global theta = radians(theta)
    newshape = []
    for vertex in shape:
       print(vertex[0],vertex[1])
