@@ -32,15 +32,11 @@ def drawcar(points,colour):
       line(temppoints[0],temppoints[1],temppoints[2],temppoints[3])
       temppoints =[]
       counter = 0
-#moved = False 
 
-        
-
-  #if moved == True:
-    
-   # drawcar(newcar,"white")
-  #elif moved == False:
-  #  drawcar(newcar,"blue")
+def translation(points, x,y):
+  for each in points:
+    each[0]+x
+    each[1]+y
   
 keys = {"left": False,
         "right": False,
@@ -72,6 +68,7 @@ def handle_frame():
     theta += 2
   elif keys["left"] == True:
     theta -= 2
+  
   newcar = rotation(car, theta)
   color("white")
   box(0,0,screen_width,screen_height)
