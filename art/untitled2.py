@@ -79,7 +79,12 @@ def handle_frame():
     theta -= 2
   if forwardv > 60:
     forwardv = 60
+  vx += forwardv*cos(theta)
+  vy -= forwarv*sin(theta)
   newcar = rotation(car, theta)
+  for i in newcar:
+    i[0] += vx
+    i[1] += vy
   color("white")
   box(0,0,screen_width,screen_height)
   drawcar(newcar,"blue")
