@@ -13,7 +13,7 @@ def translation(points, x,y):
   print points
   newpoints = []
   for each in points:
-    newpoints.append(each[0]+x,each[1]+y)
+    newpoints.append((each[0]+x),(each[1]+y))
     print each
   return newpoints
 
