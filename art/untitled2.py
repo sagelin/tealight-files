@@ -55,39 +55,16 @@ vx = x
 vy = y
 forwardv = 0 
 decelerate = False
-def handle_keydown(key):
-  forwarda = 0
-  if key == "up":
-    keys[2] = True
-  elif key == "down":
-    keys[3] = True
-    #color("white")
-    #forwarda -= acceleration
-  global newcar
-  if key == "left":
-    keys[0] = True
-    #box(0,0,screen_width,screen_height)      
-    #drawcar(newcar,"white")  
-    #newcar = rotation(newcar,-10)
-    #drawcar(newcar,"blue")
-  elif key == "right":
-    keys[1] = True
-    #color("white")
-    #box(0,0,screen_width,screen_height)
-    #drawcar(newcar,"white") 
-    #newcar = rotation(newcar,10)
-    #drawcar(newcar,"blue")
 
+def handle_keydown(key): 
+  keys[key] = True
+  return
+  global newcar
+  
 def handle_keyup(key):
-  if key == "up":
-    decelerate = True
-    keys[2] = False
-  elif key == "down":
-    keys[3] = False
-  elif key == "right":
-    keys[1] = False
-  elif key == "left":
-    keys[0] = False
+  keys[key] = False
+  return
+    
 def handle_frame():
   global forwarda, decelerate,theta, x, y, vx, vy, keys
   if keys[2] == True:
