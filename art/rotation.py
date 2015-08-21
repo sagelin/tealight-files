@@ -63,9 +63,9 @@ def handle_keyup(key):
 def handle_frame():
   global forwardv, decelerate,theta, x, y, vx, vy, keys 
   if keys["up"] == True:
-    forwardv += 0.1
+    forwardv += acceleration
   elif keys ["up"] == False:
-    forwardv -= 0.1
+    forwardv -= acceleration
   elif keys["down"] == True:
     forwardv -= acceleration
   if keys ["right"] == True:
@@ -75,4 +75,4 @@ def handle_frame():
   newcar = rotation(car, theta)
   color("white")
   box(0,0,screen_width,screen_height)
-  drawcar(newcar,"blue",)
+  drawcar(newcar,"blue")
