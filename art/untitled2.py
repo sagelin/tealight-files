@@ -50,7 +50,7 @@ keys = {"left": False,
         "down": False,
         }
    
-acceleration = 3
+acceleration = .5
 vx = x
 vy = y
 forwardv = 0 
@@ -77,10 +77,10 @@ def handle_frame():
     theta += 2
   elif keys["left"] == True:
     theta -= 2
-  if forwardv > 5:
-    forwardv = 5
-  x += forwardv*sin(theta)
-  y -= forwardv*cos(theta)
+  if forwardv > 2:
+    forwardv = 2
+  x += forwardv*cos(theta)
+  y -= forwardv*sin(theta)
   newcar = rotation(car, theta)
 #  newcarpos = []
 #  for i in newcar:
