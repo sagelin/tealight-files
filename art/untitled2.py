@@ -88,7 +88,7 @@ def handle_frame():
 #    newcarpos.append(i[1]+vy)
   color("white")
   box(0,0,screen_width,screen_height)
-  drawcar(newcarpos,"blue")
+  drawcar(newcar,"blue")
   #color("white")
   #vx = forwarda*cos(theta)
   #vy = forwarda*sin(theta)
