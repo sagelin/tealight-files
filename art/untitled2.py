@@ -43,52 +43,66 @@ drawcar(newcar,"blue")
    # drawcar(newcar,"white")
   #elif moved == False:
   #  drawcar(newcar,"blue")
+  
+keys = {"left": False,
+        "right": False,
+        "up": False,
+        "down": False,
+        }
    
 acceleration = 3
 vx = x
 vy = y
-forwarda = 0 
+forwardv = 0 
 decelerate = False
 def handle_keydown(key):
   forwarda = 0
   if key == "up":
-    color("white")
-    forwarda += acceleration
+    keys[2] = True
   elif key == "down":
-    color("white")
-    forwarda -= acceleration
+    keys[3] = True
+    #color("white")
+    #forwarda -= acceleration
   global newcar
   if key == "left":
-    color("white")
-    box(0,0,screen_width,screen_height)
-      
-    #drawcar(newcar,"white")
-      
-    newcar = rotation(newcar,-10)
-    drawcar(newcar,"blue")
+    keys[0] = True
+    #box(0,0,screen_width,screen_height)      
+    #drawcar(newcar,"white")  
+    #newcar = rotation(newcar,-10)
+    #drawcar(newcar,"blue")
   elif key == "right":
-    color("white")
-    box(0,0,screen_width,screen_height)
-    #drawcar(newcar,"white")
-      
-    newcar = rotation(newcar,10)
-    drawcar(newcar,"blue")
+    keys[1] = True
+    #color("white")
+    #box(0,0,screen_width,screen_height)
+    #drawcar(newcar,"white") 
+    #newcar = rotation(newcar,10)
+    #drawcar(newcar,"blue")
 
 def handle_keyup(key):
   if key == "up":
     decelerate = True
-
+    keys[2] = False
+  elif key == "down":
+    keys[3] = False
+  elif key == "right":
+    keys[1] = False
+  elif key == "left":
+    keys[0] = False
 def handle_frame():
   global forwarda, decelerate,theta, x, y, vx, vy
-  if decelerate == True:
-    forwarda -= 3
+  if keys[2] == True:
+    forwardv += acceleration
+  elif keys [2] == False:
+    forwardv -= acceleration
+  elif keys[3] == True:
+    forwardv -= acceleration
   if forwarda > 60:
-    forwarda = 60
-  color("white")
-  vx = forwarda*cos(theta)
-  vy = forwarda*sin(theta)
-  x += vx 
-  y += vy
+    forwardv = 60
+  #color("white")
+  #vx = forwarda*cos(theta)
+  #vy = forwarda*sin(theta)
+  #x += vx 
+  #y += vy
   
   
 
