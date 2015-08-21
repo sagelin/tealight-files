@@ -33,8 +33,6 @@ def drawcar(points,colour,x,y):
       temppoints =[]
       counter = 0
 #moved = False 
-newcar = rotation(car,0)
-drawcar(newcar,"blue")
 
         
 
