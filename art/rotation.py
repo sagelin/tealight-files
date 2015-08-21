@@ -1,5 +1,8 @@
 from tealight.art import *
 from math import * 
+y = screen_height/4
+x = screen_width/4
+
 
 keys = {"left": False,
         "right": False,
