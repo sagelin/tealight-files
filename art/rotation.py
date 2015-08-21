@@ -42,7 +42,12 @@ def drawcar(points,colour,x,y):
 def handle_keydown(key): 
   keys[key] = True
   return
-
+  global newcar
+  
+def handle_keyup(key):
+  keys[key] = False
+  return 
+    
 def handle_frame():
   global forwardv, decelerate,theta, x, y, vx, vy, keys
     if keys ["right"] == True:
