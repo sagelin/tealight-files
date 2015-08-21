@@ -96,8 +96,13 @@ def handle_frame():
     forwardv -= acceleration
   elif keys[3] == True:
     forwardv -= acceleration
+  if keys [1] == True:
+    theta += 2
+  elif keys[0] == True:
+    theta -= 2
   if forwarda > 60:
     forwardv = 60
+  print(x,y)
   #color("white")
   #vx = forwarda*cos(theta)
   #vy = forwarda*sin(theta)
