@@ -13,8 +13,10 @@ def translation(points, x,y):
   print points
   newpoints = []
   for each in points:
-    newpoints.append(str(each[0]+x))
-    newpoints.append(str(each[1]+y))
+    newx=each[0]+x
+    newy=each[1]+y
+    newpoints.append(newx)
+    newpoints.append(newy)
   return newpoints
 
 def drawcar(points,colour):
@@ -26,7 +28,7 @@ def drawcar(points,colour):
     temppoints.append(each[1])
     counter += 1
     if counter == 2:
-      line(int(temppoints[0]),int(temppoints[1]),int(temppoints[2]),int(temppoints[3]))
+      line(temppoints[0],temppoints[1],temppoints[2],temppoints[3])
       temppoints =[]
       counter = 0
 
