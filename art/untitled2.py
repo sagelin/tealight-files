@@ -82,12 +82,12 @@ def handle_frame():
   vx += forwardv*cos(theta)
   vy -= forwardv*sin(theta)
   newcar = rotation(car, theta)
+  newcarpos = []
   for i in newcar:
-    i[0] += vx
-    i[1] += vy
+    newcarpos.append((i[0]+=vx,i[1]+=vy)
   color("white")
   box(0,0,screen_width,screen_height)
-  drawcar(newcar,"blue")
+  drawcar(newcarpos,"blue")
   #color("white")
   #vx = forwarda*cos(theta)
   #vy = forwarda*sin(theta)
