@@ -77,8 +77,8 @@ def handle_frame():
     theta += 2
   elif keys["left"] == True:
     theta -= 2
-  if forwardv > 60:
-    forwardv = 60
+  if forwardv > 5:
+    forwardv = 5
   x += forwardv*cos(theta)
   y -= forwardv*sin(theta)
   newcar = rotation(car, theta)
