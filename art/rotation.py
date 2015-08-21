@@ -44,6 +44,7 @@ def handle_keydown(key):
   return
 
 def handle_frame():
+  global forwardv, decelerate,theta, x, y, vx, vy, keys
     if keys ["right"] == True:
       theta += 2
     elif keys["left"] == True:
