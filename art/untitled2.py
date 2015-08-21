@@ -66,7 +66,7 @@ def handle_keyup(key):
   return
     
 def handle_frame():
-  global forwarda, decelerate,theta, x, y, vx, vy, keys
+  global forwarda, decelerate,theta, x, y, vx, vy, key
   if keys[key] == True:
     forwardv += acceleration
   elif keys [key] == False:
