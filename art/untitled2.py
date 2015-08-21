@@ -74,6 +74,8 @@ def handle_frame():
     theta -= 2
   if forwardv > 2:
     forwardv = 2
+  if forwardv < 0:
+    forwardv = 0
   x += forwardv*cos(theta)
   y -= forwardv*sin(theta)
   newcar = rotation(car, theta)
