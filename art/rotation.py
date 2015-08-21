@@ -48,11 +48,7 @@ def handle_frame():
       theta += 2
     elif keys["left"] == True:
       theta -= 2
-      newcar = rotation(car, theta)
-#  newcarpos = []
-#  for i in newcar:
-#    newcarpos.append(i[0]+vx)
-#    newcarpos.append(i[1]+vy)
+    newcar = rotation(car, theta)
     color("white")
     box(0,0,screen_width,screen_height)
     drawcar(newcar,"blue", x, y)
