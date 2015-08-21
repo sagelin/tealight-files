@@ -1,1 +1,2 @@
-print "A new file!"
+from tealight.art import *
+from math import * 
