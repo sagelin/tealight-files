@@ -50,7 +50,7 @@ def handle_keyup(key):
     
 def handle_frame():
   global forwardv, decelerate,theta, x, y, vx, vy, keys
-    if keys ["right"] == True:
+    if keys["right"] == True:
       theta += 2
     elif keys["left"] == True:
       theta -= 2
