@@ -22,7 +22,8 @@ def translation(points, x,y):
 def drawcar(points,colour):
   color(colour)
   temppoints = []
-  counter = 0 
+  counter = 0
+  print points
   for each in points:
     temppoints.append(each[0])
     temppoints.append(each[1])
