@@ -58,12 +58,12 @@ decelerate = False
 
 def handle_keydown(key): 
   keys[key] = True
-  return
+  return key
   global newcar
   
 def handle_keyup(key):
   keys[key] = False
-  return
+  return keyup 
     
 def handle_frame(key):
   global forwarda, decelerate,theta, x, y, vx, vy, keys
