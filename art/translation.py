@@ -11,11 +11,11 @@ car = [(x,y),(x+50,y),(x-40,y-25),(x-40,y+25),(x-40,y-25)
 
 def translation(points, x,y):
   print points
+  newpoints = []
   for each in points:
-    each[0]+x
-    each[1]+y
+    newpoints.append(each[0]+x,each[1]+y)
     print each
-  return points
+  return newpoints
 
 def drawcar(points,colour):
   color(colour)
