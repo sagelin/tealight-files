@@ -65,9 +65,9 @@ def handle_keyup(key):
 def handle_frame():
   global forwardv, decelerate,theta, x, y, vx, vy, keys 
   if keys["up"] == True:
-    forwardv += acceleration
+    forwardv += 0.1
   elif keys ["up"] == False:
-    forwardv -= acceleration
+    forwardv -= 0.1
   elif keys["down"] == True:
     forwardv -= acceleration
   if keys ["right"] == True:
