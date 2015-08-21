@@ -52,8 +52,10 @@ decelerate = False
 def handle_keydown(key):
   forwarda = 0
   if key == "up":
+    color("white")
     forwarda += acceleration
   elif key == "down":
+    color("white")
     forwarda -= acceleration
   global newcar
   if key == "left":
@@ -87,5 +89,6 @@ def handle_frame():
   vy = forwarda*sin(theta)
   x += vx 
   y += vy
+  
   
 
