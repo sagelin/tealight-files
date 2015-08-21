@@ -25,7 +25,7 @@ def drawcar(points,colour):
   temppoints = []
   counter = 0 
   for each in points:
-    temppoints.append(round(each[0]))
+    temppoints.append(each[0])
     temppoints.append(each[1])
     counter += 1
     if counter == 2:
