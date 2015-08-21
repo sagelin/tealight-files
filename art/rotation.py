@@ -35,3 +35,8 @@ def drawcar(points,colour,x,y):
       line(x+temppoints[0],y+temppoints[1],x+temppoints[2],y+temppoints[3])
       temppoints =[]
       counter = 0
+      
+def handle_keydown(key): 
+  keys[key] = True
+  return
+
