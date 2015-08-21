@@ -33,5 +33,5 @@ def drawcar(points,colour):
       counter = 0
 
 drawcar(car,"blue")
-newcar = translation(car,0,0)
+newcar = translation(car,50,100)
 drawcar(newcar,"red")
