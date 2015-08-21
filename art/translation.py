@@ -13,7 +13,7 @@ def translation(points, x,y):
   for each in points:
     each[0]+x
     each[1]+y
-  return translatedpoints
+  return 
 
 def drawcar(points,colour):
   color(colour)
