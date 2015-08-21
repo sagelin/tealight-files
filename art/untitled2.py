@@ -51,7 +51,7 @@ keys = {"left": False,
         }
    
 acceleration = 0
-forwardv = 0 
+forwardv = 10 
 
 def handle_keydown(key): 
   keys[key] = True
