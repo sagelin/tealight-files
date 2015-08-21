@@ -20,7 +20,7 @@ def rotation(shape, theta):
    print(newcar)
    return newcar
       
-def drawcar(points,colour):
+def drawcar(points,colour,x,y):
   color(colour)
   temppoints = []
   counter = 0 
@@ -29,7 +29,7 @@ def drawcar(points,colour):
     temppoints.append(each[1])
     counter += 1
     if counter == 2:
-      line(temppoints[0],temppoints[1],temppoints[2],temppoints[3])
+      line(x+temppoints[0],y+temppoints[1],x+temppoints[2],y+temppoints[3])
       temppoints =[]
       counter = 0
 #moved = False 
@@ -85,7 +85,7 @@ def handle_frame():
 #    newcarpos.append(i[1]+vy)
   color("white")
   box(0,0,screen_width,screen_height)
-  drawcar(newcar,"blue")
+  drawcar(newcar,"blue", x, y)
   #color("white")
   #vx = forwarda*cos(theta)
   #vy = forwarda*sin(theta)
