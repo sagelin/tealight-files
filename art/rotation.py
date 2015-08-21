@@ -40,3 +40,6 @@ def handle_keydown(key):
   keys[key] = True
   return
 
+def handle_frame():
+  
+
