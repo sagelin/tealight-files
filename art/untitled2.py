@@ -80,7 +80,7 @@ def handle_frame():
   if forwardv > 60:
     forwardv = 60
   vx += forwardv*cos(theta)
-  vy -= forwarv*sin(theta)
+  vy -= forwardv*sin(theta)
   newcar = rotation(car, theta)
   for i in newcar:
     i[0] += vx
