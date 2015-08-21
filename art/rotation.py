@@ -41,5 +41,9 @@ def handle_keydown(key):
   return
 
 def handle_frame():
+    if keys ["right"] == True:
+      theta += 2
+    elif keys["left"] == True:
+      theta -= 2
   
 
