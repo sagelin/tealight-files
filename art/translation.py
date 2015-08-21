@@ -15,8 +15,7 @@ def translation(points, x,y):
   for each in points:
     newx=each[0]+x
     newy=each[1]+y
-    newpoints.append(newx)
-    newpoints.append(newy)
+    newpoints.append((newx,newy))
   return newpoints
 
 def drawcar(points,colour):
