@@ -20,3 +20,4 @@ def drawcar(points,colour):
       temppoints =[]
       counter = 0
 
+drawcar(car,"blue")
