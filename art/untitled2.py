@@ -77,7 +77,7 @@ def handle_frame():
     theta += 2
   elif keys["left"] == True:
     theta -= 2
-  if forwarda > 60:
+  if forwardv > 60:
     forwardv = 60
   #color("white")
   #vx = forwarda*cos(theta)
