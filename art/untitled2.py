@@ -79,8 +79,7 @@ def handle_frame():
     theta -= 2
   if forwardv > 60:
     forwardv = 60
-  print("test")
-  print(newcar)
+  print(theta)
   #color("white")
   #vx = forwarda*cos(theta)
   #vy = forwarda*sin(theta)
